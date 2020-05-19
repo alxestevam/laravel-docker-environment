@@ -2,6 +2,8 @@
 
 Este repositório contém uma estrutura inicial do framework PHP Laravel com um ambiente de desenvolvimento completo em docker.
 
+Docker Hub: <a href="https://hub.docker.com/repository/docker/alxestevam/laravel-docker">alxestevam/laravel-docker</a>
+
 ## Tecnologias utilizadas
 
 - Docker

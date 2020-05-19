@@ -10,5 +10,5 @@ RUN ln -s public html
 
 COPY . .
 
-EXPOSE 9000
-ENTRYPOINT [ "php-fpm" ]
+EXPOSE 8000
+ENTRYPOINT [ "php", "artisan", "serve", "--host=0.0.0.0" ]
