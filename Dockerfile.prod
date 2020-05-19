@@ -1,0 +1,14 @@
+FROM php:7.4-fpm-alpine
+
+RUN apk add --no-cache openssl bash mysql-client
+RUN docker-php-ext-install pdo pdo_mysql
+
+WORKDIR /var/www/
+
+RUN rm -rf html
+RUN ln -s public html
+
+COPY . .
+
+EXPOSE 9000
+ENTRYPOINT [ "php-fpm" ]
